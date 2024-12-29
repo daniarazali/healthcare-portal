@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Healthcare Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="#appointments">Book Appointment</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="appointments">
+        <h2>Book an Appointment</h2>
+        <form id="appointmentForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="date">Preferred Appointment Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="service">Choose a Service:</label>
+            <select id="service">
+                <option value="generalCheckup">General Check-up</option>
+                <option value="dental">Dental Consultation</option>
+                <option value="specialist">Specialist Consultation</option>
+            </select>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+        <div id="appointmentMessage"></div>
+    </section>
+
+    <section id="services">
+        <h2>Our Healthcare Services</h2>
+        <ul>
+            <li>General Check-ups</li>
+            <li>Dental Services</li>
+            <li>Specialist Consultations</li>
+            <li>Laboratory Tests</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@healthcareportal.com</p>
+        <p>Phone: +123-456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Healthcare Portal</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
